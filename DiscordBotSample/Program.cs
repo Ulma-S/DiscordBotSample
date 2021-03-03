@@ -21,6 +21,9 @@ public class BotCore {
     private const string m_token = "";
 
 
+    private static void Main(string[] args) => new BotCore().MainAsync().GetAwaiter().GetResult();
+
+
     /// <summary>
     /// エントリポイントから直接呼ばれる。
     /// 諸々の初期化メソッド。
